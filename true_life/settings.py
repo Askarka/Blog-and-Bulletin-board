@@ -150,3 +150,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # LOGIN_REDIRECT_URL = '/accounts/profile/'
 # LOGOUT_REDIRECT_URL = None
 
+import dj-database-url
+
+db_from_env = dj-database-url.config()
+DATABASE['default'].update(db_from_env)
