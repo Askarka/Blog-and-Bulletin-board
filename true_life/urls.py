@@ -26,7 +26,7 @@ from true_life import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', include('blog.urls')),
+    path('blog/', include('blog.urls'), name='blog'),
     url(r'^favicon\.ico$', RedirectView.as_view(url='/static/img/favicon.ico', permanent=True)),
     path('bboard/', include('bboard.urls')),
     path('', include('main.urls'), name='main')
