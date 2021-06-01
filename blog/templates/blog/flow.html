@@ -37,6 +37,7 @@
                     <div class="text-body">{{ post.text }}</div>
                     <div>{{ post.published }}</div>
                     <div class="">
+                        <img src="/media/{{ post.cover }}" class="rounded">
                     {% for img in post.images.all %}
                         <img src="{{ img.image.url }}" class="rounded " alt="{{ img.description }}">
                         <br><br>

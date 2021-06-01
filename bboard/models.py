@@ -1,5 +1,11 @@
 from django.db import models
 
+FRUIT_CHOICES= [
+    ('orange', 'Oranges'),
+    ('cantaloupe', 'Cantaloupes'),
+    ('mango', 'Mangoes'),
+    ('honeydew', 'Honeydews'),
+    ]
 
 class Bb(models.Model):
     title = models.CharField(max_length=50, verbose_name='Товар')
@@ -7,7 +13,8 @@ class Bb(models.Model):
     price = models.FloatField(null=True, blank=True, verbose_name='Цена')
     published = models.DateTimeField(auto_now_add=True, db_index=True, verbose_name='Опубликовано')
     rubric = models.ForeignKey('Rubric', null=True, on_delete=models.PROTECT, verbose_name='Рубрика')
-
+    fast_sell = models.BooleanField(null=True, verbose_name='Быстрая покупка')
+    favorite_fruit = models.BooleanField(null=True, verbose_name='Состояние товара')
     class Meta:
         verbose_name_plural = 'Объявления'
         verbose_name = 'Объявление'

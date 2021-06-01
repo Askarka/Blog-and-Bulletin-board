@@ -3,6 +3,7 @@ from django.db import models
 
 class Post(models.Model):
     title = models.CharField('Название', max_length=100)
+    cover = models.ImageField(upload_to='images/', null=True)
     text = models.TextField()
     published = models.DateTimeField(auto_now_add=True, db_index=True, verbose_name='Дата публикации')
 

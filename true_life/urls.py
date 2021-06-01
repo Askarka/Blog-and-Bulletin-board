@@ -31,5 +31,5 @@ urlpatterns = [
     path('blog/', include('blog.urls'), name='blog'),
     url(r'^favicon\.ico$', RedirectView.as_view(url='/static/img/favicon.ico', permanent=True)),
     path('bboard/', include('bboard.urls')),
-    path('', include('main.urls'), name='main')
+    path('accounts/', include('main.urls'), name='main')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

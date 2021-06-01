@@ -4,7 +4,7 @@ from django.urls import path
 # from .views import index, by_rubric, BbCreateView
 
 
-from src.blog.views import CreatePostView, HomePageView, flow
+from blog.views import CreatePostView, HomePageView, flow
 from true_life import settings
 
 urlpatterns = [
