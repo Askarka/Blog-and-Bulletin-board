@@ -20,9 +20,11 @@ from django.conf.urls.static import static
 from django.views.generic import RedirectView
 
 import bboard
+import main
 from true_life import settings
 
 urlpatterns = [
+    path('contacts/', include('main.urls')),
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),
     url(r'^favicon\.ico$', RedirectView.as_view(url='/static/img/favicon.ico', permanent=True)),
