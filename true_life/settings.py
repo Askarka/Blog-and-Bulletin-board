@@ -12,9 +12,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 
-# import dj-database-url
-#
-# db_from_env = dj-database-url.config()
+import dj-database-url
+
+db_from_env = dj-database-url.config()
 
 # DATABASE['default'].update(db_from_env)
 
