@@ -12,10 +12,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 
-import dj-database-url
-
-db_from_env = dj-database-url.config()
-DATABASE['default'].update(db_from_env)
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -28,7 +24,7 @@ SECRET_KEY = 'django-insecure-yb7#gv2p8g_v+d#^n+%+-nfm2=e^oks1d8%dhmj$gs4+%d$6j*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -147,4 +143,3 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
  # LOGIN_URL = '/accounts/login/'
 # LOGIN_REDIRECT_URL = '/accounts/profile/'
 # LOGOUT_REDIRECT_URL = None
-
