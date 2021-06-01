@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'main.apps.MainConfig',
     'blog.apps.BlogConfig',
     'bootstrap',
+    'bootstrap4',
     'bboard.apps.BboardConfig'
 ]
 
@@ -103,7 +104,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-Ru'
 
 TIME_ZONE = 'Europe/Moscow'
 
@@ -138,3 +139,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+ # LOGIN_URL = '/accounts/login/'
+# LOGIN_REDIRECT_URL = '/accounts/profile/'
+# LOGOUT_REDIRECT_URL = None
