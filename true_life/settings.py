@@ -15,10 +15,11 @@ from pathlib import Path
 
 
 
-import dj-database-url
+# import dj-database-url
+#
+# db_from_env = dj-database-url.config()
+# DATABASE['default'].update(db_from_env)
 
-db_from_env = dj-database-url.config()
-DATABASE['default'].update(db_from_env)
 # import dj-database-url
 #
 # db_from_env = dj-database-url.config()
