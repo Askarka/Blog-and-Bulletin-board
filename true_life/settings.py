@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-yb7#gv2p8g_v+d#^n+%+-nfm2=e^oks1d8%dhmj$gs4+%d$6j*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -143,3 +143,4 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
  # LOGIN_URL = '/accounts/login/'
 # LOGIN_REDIRECT_URL = '/accounts/profile/'
 # LOGOUT_REDIRECT_URL = None
+
