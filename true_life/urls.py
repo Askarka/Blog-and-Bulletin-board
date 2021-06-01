@@ -15,11 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from django.contrib.auth.views import LoginView, LogoutView
 from django.urls import path, include
 from django.conf.urls.static import static
 from django.views.generic import RedirectView
 
 import bboard
+from main.views import RegisterDoneView, RegisterUserView
 from true_life import settings
 
 urlpatterns = [
@@ -27,4 +29,5 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     url(r'^favicon\.ico$', RedirectView.as_view(url='/static/img/favicon.ico', permanent=True)),
     path('bboard/', include('bboard.urls')),
+    path('', include('main.urls'), name='main')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
