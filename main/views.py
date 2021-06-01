@@ -22,5 +22,5 @@ def basic(request):
 
 @login_required #Убрать, если сломатся
 def profilePage(request, username):
-
-    return render(request, 'main/profile.html', context={'profile': request.user})
+    profile = get_object_or_404(User, username=username)
+    return render(request, 'main/profile.html', context={'profile': profile})
