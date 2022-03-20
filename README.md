@@ -5,10 +5,11 @@ Runing instructions:
 3. `pip install -r requirements.txt` - установка зависимостей
 4. `python manage.py migrate` - запуск миграций
 5. `python manage.py runserver` - запуск приложения
+____
 you can visit links:
- `http://127.0.0.1:8000/bboard/`
- `http://127.0.0.1:8000/bboard/add/`
- `http://127.0.0.1:8000/blog/flow/`
- `http://127.0.0.1:8000/blog/post/`
- `http://127.0.0.1:8000/info/`
+ `http://127.0.0.1:8000/bboard/`  
+ `http://127.0.0.1:8000/bboard/add/`  
+ `http://127.0.0.1:8000/blog/flow/`  
+ `http://127.0.0.1:8000/blog/post/`    
+ `http://127.0.0.1:8000/info/`  
  ...
