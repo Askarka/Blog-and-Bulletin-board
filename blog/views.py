@@ -22,4 +22,4 @@ class CreatePostView(CreateView):  # новый
     model = Post
     form_class = PostForm
     template_name = 'blog/post.html'
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('flow')

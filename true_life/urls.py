@@ -22,7 +22,7 @@ from django.views.generic import RedirectView
 
 import bboard
 import main
-from main.views import RegisterDoneView, RegisterUserView
+from main.views import RegisterDoneView, RegisterUserView, basic
 from true_life import settings
 
 urlpatterns = [
@@ -31,5 +31,6 @@ urlpatterns = [
     path('blog/', include('blog.urls'), name='blog'),
     url(r'^favicon\.ico$', RedirectView.as_view(url='/static/img/favicon.ico', permanent=True)),
     path('bboard/', include('bboard.urls')),
-    path('accounts/', include('main.urls'), name='main')
+    path('accounts/', include('main.urls'), name='main'),
+    path('info/', basic, name='info')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
