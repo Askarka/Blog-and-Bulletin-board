@@ -6,7 +6,7 @@ Runing instructions:
 4. `python manage.py migrate` - запуск миграций
 5. `python manage.py runserver` - запуск приложения
 ____
-you can visit links:
+you can visit links:  
  `http://127.0.0.1:8000/bboard/`  
  `http://127.0.0.1:8000/bboard/add/`  
  `http://127.0.0.1:8000/blog/flow/`  
